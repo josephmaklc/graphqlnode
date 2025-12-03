@@ -45,9 +45,9 @@ const schema = buildSchema(`
   type Query {
     # Get all cars
     cars: [Car!]!
-    # Get a specific book by ID
+    # Get a specific car by ID
     car(id: ID!): Car
-    # Search books by title or author
+    # Search cars by title or author
     searchCars(query: String!): [Car!]!
   }
 
@@ -73,7 +73,7 @@ const root = {
   // Resolver for fetching all cars
   cars: () => cars,
   
-  // Resolver for fetching a single book by ID
+  // Resolver for fetching a single car by ID
   car: ({ id }) => cars.find(car => car.id === id),
   
   // Resolver for searching cars
@@ -138,3 +138,4 @@ const PORT = 4000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/graphql`);
 });
+
