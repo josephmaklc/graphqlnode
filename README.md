@@ -1,4 +1,4 @@
-# Welcome to GraphQL demo
+# Welcome to Express-GraphQL demo
 
 This is a simple demo of graphql in node.js. A little express server is running to host graphql. A schema of "car" is set up, along with query and mutation to search and update.
 
@@ -78,4 +78,5 @@ mutation {
     year
   }
 }
+
 ```
